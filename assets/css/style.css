@@ -1,0 +1,204 @@
+/* CSS*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100px;
+    display: auto;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+}
+
+
+header {
+    margin-top: 0;
+    padding-bottom: 0px;
+    border-bottom: 0 solid;
+}
+
+/*Estilo para el navbar*/
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    float: left;
+}
+
+.navbar nav-container img {
+
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    text-align: center;
+}
+
+
+/*Color al seleccionarlo*/
+.navbar .nav-container a:hover {
+    background-color: #000;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .navbar nav-container a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left; 
+    }
+}
+
+/*Slider principal*/
+
+.sl-wp {
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+}
+
+.imagenes {
+    display:flex;
+    width: 100%;
+}
+
+.imagenes img {
+    height: 800px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.imagenes input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {background: #fff }
+.img1:checked ~ .m1 {
+    margin-left: 0;
+}
+.img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+.img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+.img4:checked ~ .m4 {
+    margin-left: 300;
+}
+
+
+.ttable {
+    background-color: rgb(238, 238, 238);
+    display:table-cell; 
+    width:100%; 
+    border-spacing: 10px;
+}
+
+.test {
+    display:table-row; 
+    width:100%; 
+    padding: 12px;
+    background:  rgb(238, 238, 238);
+    width: 33.33333%; 
+    border: 1px solid black;
+}
+
+.sl {
+    display:table-cell; 
+    border:20px solid  rgb(238, 238, 238);
+}
+
+
+.cursos {
+    display:table-cell; 
+    width:100%; 
+    border-spacing: 10px;
+}
+
+
+.curso {
+    display:table-cell; 
+    border: 50px solid  rgb(238, 238, 238);
+    border-radius:0 0 25px 25px;
+}
+
+
+.header1{
+    background: transparent;
+    background-image: url(/assets/images/c1.jpeg);
+    background-size:cover;
+    border-radius:5px 5px 0 0;
+    text-align: left;
+    line-height:40em;
+    padding: 20px;
+    width: 350px;
+    height: 160px;
+    color:#fff;
+}
+
+.header2{
+    background: transparent;
+    background-image: url(/assets/images/c2.jpeg);
+    background-size:cover;
+    border-radius:5px 5px 0 0;
+    text-align: left;
+    line-height:40em;
+    padding: 20px;
+    width: 350px;
+    height: 160px;
+    color:#fff;
+}
+
+.header3{
+    background: transparent;
+    background-image: url(/assets/images/c3.jpeg);
+    background-size:cover;
+    border-radius:5px 5px 0 0;
+    text-align: left;
+    line-height:40em;
+    padding: 20px;
+    width: 350px;
+    height: 160px;
+    color:#fff;
+}
+
+
+
+.card_text {
+    text-align:left;
+    background: #fff;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 2px 2px rgba(138, 136, 136, 0.5);
+    padding: 5px;
+    width: 350px;
+    height: 90px;
+    color:#9FA2B4;
+}
+
+
+.middletext {
+    margin-inline-start:0;
+    padding-top:0;
+}
+
+
