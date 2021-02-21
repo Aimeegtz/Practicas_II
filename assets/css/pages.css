@@ -1,4 +1,26 @@
 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100px;
+  display: auto;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+}
+
+
+header {
+  margin-top: 0;
+  padding-bottom: 0px;
+  border-bottom: 0 solid;
+}
+
 .navigation {
     display: flex;
     flex-flow: row wrap;
@@ -6,7 +28,7 @@
     
     list-style: none;
     margin: 0; 
-    background: deepskyblue;
+    background: #555;
 }
 
 .navigation a {
@@ -17,8 +39,10 @@
 }
   
 .navigation a:hover {
-    background: #1565C0;
+    background: black;
 }
+
+
   
 @media all and (max-width: 800px) {
     .navigation {
