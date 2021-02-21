@@ -62,7 +62,38 @@ body {
     margin-bottom: 2%;
     border-radius: 10px;
 }
-  
+
+
+.botones {
+    background:salmon;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    height: 40px;
+    align-items: center;
+}
+
+.search {
+
+    background: pink;
+    flex: 0 50%;
+    height: 30px;
+    margin-bottom: 20%;
+    border-radius: 30px;
+    text-align: left;
+    
+}
+
+.filtro {
+
+    background: pink;
+    flex: 0 50%;
+    height: 30px;
+    margin-bottom: 20%;
+    border-radius: 30px;
+    text-align: left;
+
+}
   
 
 @media all(min-width: 1000px) {
