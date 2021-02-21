@@ -15,7 +15,7 @@ body {
   
   
 .wrapper > *{
-
+    
     display: flex;
     flex-flow: row wrap;
     text-align: center;
@@ -27,7 +27,7 @@ body {
   
   
 .header {
-    background: tomato;
+    background: #555;
     height: 120px;
 }
   
@@ -45,13 +45,22 @@ body {
     font-size: 24px;
 }
   
-  
+
+
+.n1 {
+    background:black;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+
 .flex-n1 {
     background:steelblue;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-}  
+} 
 
 .item {
     background: pink;
