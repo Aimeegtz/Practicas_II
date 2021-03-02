@@ -30,9 +30,9 @@ header {
 
 .navbar nav-container img {
 
-    height: 100px;
-    width: 100px;
-    padding: 0;
+    height: 3px;
+    width: 30px;
+    padding: 1px;
     text-align: center;
 }
 
