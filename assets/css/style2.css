@@ -13,67 +13,19 @@ body {
     background-color: transparent;
 }
   
-  
-.wrapper > *{
-    
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    flex: 1 100%;
-    border-radius: 10px;
-}
-  
-  
+
 .header {
     background: #555;
     height: 120px;
 }
-  
-.footer {
-    
-    background: lightgreen;
-    height: 80px
-  
-}
-  
+
 .main {
     text-align: left;
     background: deepskyblue;
     height: 300px;
     font-size: 24px;
 }
-  
 
-
-
-.flex-n1 {
-    grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 80px auto 80px;
-    column-gap: 10px;
-    row-gap: 15px;
-    background:steelblue;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    justify-items: center;
-    padding: 100px;
-} 
-
-.item {
-    background: pink;
-    flex: 0 30%;
-    width: 233px;
-    height: 233px;
-    margin-bottom: 5%;
-    border-radius: 15px 15px 35px 35px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: left;
-}
 
 
 .botones {
@@ -93,7 +45,7 @@ body {
 .search {
 
     background: pink;
-    flex: 0 65%;
+    flex: 0 40%;
     height: 30px;
     margin-bottom: 30%;
     border-radius: 30px;
@@ -120,9 +72,139 @@ body {
 
 }
   
+  
+
+/*Wrapper principal*/
+.wrapper > *{
+    
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+
+  
+.footer {
+    
+    background: lightgreen;
+    height: 80px
+  
+}
+
+  
+
+
+
+.flex-n1 {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 80px auto 80px;
+    column-gap: 10px;
+    row-gap: 15px;
+    background:white;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 100px;
+} 
+
+
+
+/* If the amount of items is above 3 */
+/* Change the layout direction */
+.flex-n1 > :nth-last-child(n+3),
+.flex-n1 > :nth-last-child(n+3) ~ * {
+	flex-direction: column;
+    background: white;
+    width: 343px;
+    height: 290px;
+    border-radius: 10px 10px 25px 25px;
+    box-shadow: 0 8px 6px -6px gray;
+}
+
+/* And change the image height and color */
+.flex-n1 > :nth-last-child(n+3) .image1,
+.flex-n1 > :nth-last-child(n+3) ~ * .image1 {
+
+    background: url(/assets/images/c1.jpeg);
+    display: flex;
+    flex-flow: wrap;
+    height: 180px;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 50px;
+}
+
+
+.flex-n1 > :nth-last-child(n+3) .image2,
+.flex-n1 > :nth-last-child(n+3) ~ * .image2 {
+
+    background: url(/assets/images/c2.jpeg);
+    display: flex;
+    flex-flow: wrap;
+    height: 180px;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 50px;
+}
+
+.flex-n1 > :nth-last-child(n+3) .image3,
+.flex-n1 > :nth-last-child(n+3) ~ * .image3 {
+
+    background: url(/assets/images/c3.jpeg);
+    display: flex;
+    flex-flow: wrap;
+    width: 343px;
+    height: 180px;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 50px;
+}
+
+
+
+
+/* Demo decoration */
+.container {
+	display: flex;
+	width: 800px;
+	margin: 1em auto;
+}
+.mini-card {
+	display: flex;
+	width: 400px;
+	max-width: 100%;
+	margin: 1em;
+	border: 2px solid #eee;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.image {
+	min-width: 150px;
+	background: turquoise;
+}
+
+.text {
+	font-size: 20px;
+	line-height: 1.55;
+    text-align: left;
+	padding: 8px;
+}
+
+
 
 @media all(min-width: 1000px) {
   
     .main { flex: 3 0px; }
     
 }
+
+
+
+
+
