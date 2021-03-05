@@ -38,7 +38,7 @@ body {
 }
 
 .inicio{
-
+    
     background:#555;
 }
 
@@ -57,13 +57,26 @@ body {
 }
 
 
+.N {
+    color: orange;
+    background: #555;
+}
+
+
+.N p{
+
+    background:transparent;
+    padding: 70px;
+    font-size: 40px;
+}
+
 
 /*SECCIÓN DEL SLIDER*/
 
 .main {
     
     /* layout */
-    height: 100vh;
+    height: 80vh;
     min-width: 100vh;
     flex: 1;
     display: flex;
@@ -92,12 +105,12 @@ body {
 
 .botones {
 
-    background:salmon;
+    background:#555;
     flex-flow: row wrap;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: center;
+    align-self: center;
+    column-gap: 40px;
     padding: 15px;
-    margin: 10px;
     flex: 1 100%;
     height: 60px;
     border-radius: 10px;
@@ -106,7 +119,7 @@ body {
 
 .search {
 
-    background: pink;
+    background: rgb(54, 48, 48);
     flex: 0 65%;
     height: 40px;
     margin-bottom: 30%;
@@ -114,30 +127,60 @@ body {
     padding: 10px;
     display: flex;
     align-items: center;
-    text-align: left;
     justify-content: left;
     
+}
+
+.search p {
+    text-align: left;
+    color: white;
+    background: transparent;
 }
 
 .filtro {
 
     background: #fca855;
-    flex: 0 30%;
+    flex: 0 15%;
     height: 40px;
-    margin-bottom: 20%;
+    width: 10px;
+    margin-bottom: 50%;
     border-radius: 15px;
     padding: 10px;
     display: flex;
     align-items: center;
-    text-align: left;
-    justify-content: left;
+    justify-content: center; 
 
 }
-  
+
+.filtro p {
+    text-align: center;
+    color: white;
+    background: transparent;
+}
+
+
+.section_ag {
+    background: rgb(54, 48, 48);
+    flex-flow: row wrap;
+    display: flex;
+    padding: 105px;
+
+}
+
+.ag{
+    font-size: 20px;
+    background:tomato;
+    padding: 10px;
+}
+
+
+
+
 
 .section_tp {
 
     padding: 105px;
+    font-size: 20px;
 }
 
 /*Wrapper principal*/
@@ -145,7 +188,6 @@ body {
     
     display: flex;
     flex-flow: row wrap;
-    text-align: center;
     padding: 5px;
     margin: 0;   /*Lo modifique para cambiar el fondo*/
     flex: 1 100%;
@@ -158,8 +200,8 @@ body {
 .flex-n1 {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-template-rows: 80px auto 80px;
-    column-gap: 10px;
-    row-gap: 15px;
+    column-gap: 5px;
+    row-gap: 10px;
     background: #f3f3f3;
     display: flex;
     flex-flow: wrap;
