@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background: yellow;
 }
   
 body {
@@ -13,17 +14,78 @@ body {
     background-color: transparent;
 }
   
-
+/*HEADER Y NAVBAR*/
 .header {
     background: #555;
-    height: 120px;
+    height: 100px;
 }
 
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    float: left;
+}
+
+.nav-container{
+    background: #555;
+}
+
+.logo {
+
+    background:#555;
+    float: left;
+}
+
+.inicio{
+
+    background:#555;
+}
+
+.navbar nav-container img {
+
+    height: 3px;
+    width: 30px;
+    padding: 1px;
+    text-align: center;
+}
+
+
+/*Color al seleccionarlo*/
+.navbar .nav-container a:hover {
+    background-color: #000;
+}
+
+
+
+/*SECCIÓN DEL SLIDER*/
+
 .main {
-    text-align: left;
-    background: deepskyblue;
-    height: 300px;
-    font-size: 24px;
+    
+    /* layout */
+    height: 100vh;
+    min-width: 100vh;
+    flex: 1;
+    display: flex;
+    /* content styling OPTIONAL*/
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+    /* background styling */
+    background-color: #555;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.slider {
+    background-image: url(/assets/images/slider1.jpeg);
+    display: flex;
+    flex-flow: wrap;
+    width: 960px;
+    height: 502px;
+    align-items: center;
 }
 
 
@@ -45,8 +107,8 @@ body {
 .search {
 
     background: pink;
-    flex: 0 40%;
-    height: 30px;
+    flex: 0 65%;
+    height: 40px;
     margin-bottom: 30%;
     border-radius: 30px;
     padding: 10px;
@@ -59,11 +121,11 @@ body {
 
 .filtro {
 
-    background: pink;
+    background: #fca855;
     flex: 0 30%;
-    height: 30px;
+    height: 40px;
     margin-bottom: 20%;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -72,7 +134,11 @@ body {
 
 }
   
-  
+
+.section_tp {
+
+    padding: 105px;
+}
 
 /*Wrapper principal*/
 .wrapper > *{
@@ -80,23 +146,13 @@ body {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 0;   /*Lo modifique para cambiar el fondo*/
     flex: 1 100%;
-    border-radius: 10px;
-}
-
-
-  
-.footer {
-    
-    background: lightgreen;
-    height: 80px
-  
+    border-radius: 0;
 }
 
   
-
 
 
 .flex-n1 {
@@ -104,11 +160,12 @@ body {
     grid-template-rows: 80px auto 80px;
     column-gap: 10px;
     row-gap: 15px;
-    background:white;
+    background: #f3f3f3;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
     justify-items: center;
+    border-radius: 0 0 0 0;
     padding: 100px;
 } 
 
@@ -181,6 +238,7 @@ body {
 	margin: 1em;
 	border: 2px solid #eee;
 	border-radius: 8px;
+    justify-items: center;
 	overflow: hidden;
 }
 
@@ -190,12 +248,21 @@ body {
 }
 
 .text {
+    background: white;
 	font-size: 20px;
 	line-height: 1.55;
     text-align: left;
 	padding: 8px;
 }
 
+
+
+.footer {
+    
+    background: lightgreen;
+    height: 80px
+  
+}
 
 
 @media all(min-width: 1000px) {
