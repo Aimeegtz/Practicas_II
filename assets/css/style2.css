@@ -16,30 +16,35 @@ body {
   
 /*HEADER Y NAVBAR*/
 .header {
-    background: #555;
-    height: 100px;
+    background: pink;
+    height: 50px;  /*SePARACIÓN ENTRE NAVBAR Y EL SLIDER*/
+    padding:0;
+    margin:0;
+
 }
 
 .navbar {
     width: 100%;
-    background-color: #555;
+    display: flex;
+    background-color: orange;
     overflow: auto;
     float: left;
 }
 
 .nav-container{
-    background: #555;
+    background: green;
+    
 }
 
 .logo {
 
-    background:#555;
+    background:yellow;
     float: left;
 }
 
 .inicio{
     
-    background:#555;
+    background:tomato;
 }
 
 .navbar nav-container img {
@@ -77,13 +82,13 @@ body {
     
     /* layout */
     height: 80vh;
-    min-width: 100vh;
+    min-width: 50vh;
     flex: 1;
     display: flex;
     /* content styling OPTIONAL*/
     align-items: center;
     justify-content: center;
-    padding: 10vh;
+    padding: 5vh;
     /* background styling */
     background-color: #555;
     background-size: cover;
