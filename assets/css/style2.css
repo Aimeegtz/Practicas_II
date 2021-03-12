@@ -95,24 +95,38 @@ body {
 
 }
 
-.star {
 
-    display: flex;
-    max-width:70%;
-    max-height:70%;
-    margin: 5px;
+.module_N {
+
+    padding: 1rem;
+    background: #555;
+    align-items: left;
+    justify-content: start;  /*alineación de los elementos*/
+    align-items: left;
 }
 
-.N {
-    background: #555;
+.module_N img {
+
+    background: transparent;
+    display: flex;
+    max-width:8%;
+    max-height:8%;
+    margin: -1rem 2rem -1rem 5rem;  /*Posición de la estrella 5 y separación del txt 2*/
+    padding: 1rem;
+    
+}
+
+
+.module_N p {
+    background: transparent;
     text-align: left;
     color: orange;
-    align-items: left;
-    justify-content: start;
-    padding: 0;
-    height: 70px;
     font-size: 50px;
+    align-self: center;
+    
 }
+
+
 
 
 .slider {
