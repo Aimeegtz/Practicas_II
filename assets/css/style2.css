@@ -100,25 +100,24 @@ body {
 
     padding: 1rem;
     background: #555;
-    align-items: left;
     justify-content: start;  /*alineación de los elementos*/
-    align-items: left;
+    align-items: center;
 }
 
 .module_N img {
 
     background: transparent;
     display: flex;
-    max-width:8%;
-    max-height:8%;
-    margin: -1rem 2rem -1rem 5rem;  /*Posición de la estrella 5 y separación del txt 2*/
-    padding: 1rem;
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin: -1rem 0.5rem -1rem 6rem;  /*Posición de la estrella 5 y separación del txt 0.5*/
+    padding: 0;
     
 }
 
 
 .module_N p {
-    background: transparent;
+    background:tr;
     text-align: left;
     color: orange;
     font-size: 50px;
@@ -196,36 +195,28 @@ body {
 }
 
 
-.section_ag {
+/*Cominezo de agregados recientemente y todos los post*/
+.section_txt {
+
+    padding: 1rem;
     background: #f3f3f3;
     flex-flow: row wrap;
     display: flex;
-    padding: 105px;
-
+    justify-content: start; 
+    align-items: left;
 }
 
-.ag{
-    font-size: 20px;
-    background:transparent;
-    padding: 10px;
-}
+.section_txt p {
 
-
-
-
-
-.section_tp {
-    background: #f3f3f3;
-    padding: 10px;
-    font-size: 20px;
+    background: transparent;
+    padding: 1.5rem; /*separación entre los div*/
+    margin: 1rem 1rem 1rem 9rem; 
+    color:#555;
+    font-size: 27px;
+    align-self: center;
 }
 
 
-.tp{
-    font-size: 20px;
-    background:transparent;
-    padding: 10px;
-}
 
 /*Wrapper principal*/
 .wrapper > *{
@@ -246,19 +237,21 @@ body {
     grid-template-rows: 80px auto 80px;
     column-gap: 5px;
     row-gap: 10px;
-    background: #f3f3f3;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
     justify-items: center;
     border-radius: 0 0 0 0;
-    padding: 100px;
+    background: #f3f3f3;
+
 } 
 
 
 
-/* If the amount of items is above 3 */
-/* Change the layout direction */
+/* 3 cuadros */
+/*configuración entre cada cuadro*/
 .flex-n1 > :nth-last-child(n+3),
 .flex-n1 > :nth-last-child(n+3) ~ * {
 	flex-direction: column;
@@ -267,9 +260,11 @@ body {
     height: 290px;
     border-radius: 10px 10px 25px 25px;
     box-shadow: 0 8px 6px -6px gray;
+    margin: 1rem 1rem 1rem 2rem;
+    
 }
 
-/* And change the image height and color */
+/* Configuración de cada cuadro */
 .flex-n1 > :nth-last-child(n+3) .image1,
 .flex-n1 > :nth-last-child(n+3) ~ * .image1 {
 
@@ -322,7 +317,7 @@ body {
 	width: 400px;
 	max-width: 100%;
 	margin: 1em;
-	border: 2px solid #eee;
+	border: 2px solid #f3f3f3;
 	border-radius: 8px;
     justify-items: center;
 	overflow: hidden;
@@ -330,7 +325,7 @@ body {
 
 .image {
 	min-width: 150px;
-	background: turquoise;
+	background:transparent;
 }
 
 .text {
