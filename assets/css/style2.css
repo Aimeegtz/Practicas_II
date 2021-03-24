@@ -116,17 +116,6 @@ body {
 }
 
 
-.module_N p {
-    background:tr;
-    text-align: left;
-    color: orange;
-    font-size: 50px;
-    align-self: center;
-    
-}
-
-
-
 
 .slider {
     background-image: url(/assets/images/slider1.jpeg);
@@ -237,10 +226,45 @@ body {
     justify-content: center;
     justify-items: center;
     border-radius: 0 0 0 0;
-    background: #f3f3f3;
+    background:#F4F2F3;
 
 } 
 
+
+.mini-card {
+	display: flex;
+	width: 400px;
+	max-width: 100%;
+	margin: 1em;
+	border: 2px solid #f3f3f3;
+	border-radius: 8px;
+    justify-items: center;
+	overflow: hidden;
+}
+
+
+
+.text {
+    background: white;
+	padding: 8px;
+}
+
+
+.info{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.if_name img {
+
+    background: transparent;
+    float: left;
+    max-width: 2rem;
+    max-height: 2rem;
+    margin: 0.5rem -0.5rem -2.4rem 1rem;  /*Posición de la estrella 5 y separación del txt 0.5*/
+    padding: 0;
+}
 
 
 /* 3 cuadros */
@@ -248,13 +272,12 @@ body {
 .flex-n1 > :nth-last-child(n+3),
 .flex-n1 > :nth-last-child(n+3) ~ * {
 	flex-direction: column;
-    background: white;
+    background:white;
     width: 343px;
     height: 290px;
     border-radius: 10px 10px 25px 25px;
     box-shadow: 0 8px 6px -6px gray;
     margin: 1rem 1rem 1rem 2rem;
-    
 }
 
 /* Configuración de cada cuadro */
@@ -294,61 +317,6 @@ body {
     justify-content: space-between;
     justify-items: center;
     padding: 50px;
-}
-
-
-
-
-/* Demo decoration */
-.container {
-	display: flex;
-	width: 800px;
-	margin: 1em auto;
-}
-.mini-card {
-	display: flex;
-	width: 400px;
-	max-width: 100%;
-	margin: 1em;
-	border: 2px solid #f3f3f3;
-	border-radius: 8px;
-    justify-items: center;
-	overflow: hidden;
-}
-
-
-.mini-card info{
-
-    flex: 1 100%;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-.if_name p{
-
-    text-align: left;
-    font-size: 20px;
-    font-weight: normal;
-}
-
-.if_date time{
-
-    text-align: right;
-}
-
-.image {
-	min-width: 150px;
-	background:transparent;
-}
-
-.text {
-    background: white;
-	font-size: 20px;
-	line-height: 1.55;
-    text-align: left;
-	padding: 8px;
 }
 
 

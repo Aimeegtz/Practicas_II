@@ -1,24 +1,26 @@
 /*Fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    font-style:normal;
 }
 
 
+.module_N p {
+    background:tr;
+    text-align: left;
+    color: orange;
+    font-size: 50px;
+    align-self: center;
+    font-weight: 500;
     
-.p_card{
-
-    display:inline;
-    word-break: break-word;     
-    font-size: 20px;
-    color: black;
-    position: relative;
-    padding: 0;
-
 }
+
+
+
 
 /* Navbar links */
 .navbar a {
@@ -42,4 +44,35 @@ body {
     font-size: 15px;
     text-align: center;
     color: white;
+}
+
+
+/*MINICARD*/
+
+.text p{
+
+    font-size: 20px;
+	line-height: 1.55;
+    text-align: left;
+
+}
+
+
+.if_name p{
+
+    float: left;
+    font-size: 15px;
+    color: #d8d8d8;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+
+.if_date{
+
+    float: right;
+    font-size: 15px;
+    color: #d8d8d8;
+    font-weight: 300;
+    padding: 1rem;
 }
