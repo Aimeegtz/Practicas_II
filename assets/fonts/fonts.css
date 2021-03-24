@@ -9,17 +9,6 @@ body {
 }
 
 
-.module_N p {
-    background:tr;
-    text-align: left;
-    color: orange;
-    font-size: 50px;
-    align-self: center;
-    font-weight: 500;
-    
-}
-
-
 
 
 /* Navbar links */
@@ -32,6 +21,18 @@ body {
     width: 33.33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: right; 
 }
+
+
+.module_N p {
+    background:tr;
+    text-align: left;
+    color: orange;
+    font-size: 50px;
+    align-self: center;
+    font-weight: 500;
+    
+}
+
 
 .search p {
     text-align: left;
@@ -47,13 +48,29 @@ body {
 }
 
 
+.section_txt p {
+
+    background: transparent;
+    color: #595959;
+    font-size: 27px;
+    font-weight: 500;
+    font-style: bold;
+    padding: 1.5rem;
+    margin: 1rem 1rem 1rem 9rem;
+
+}
+
+
+
 /*MINICARD*/
 
-.text p{
+.text{
 
-    font-size: 20px;
-	line-height: 1.55;
+    font-size: 22px;
+	line-height: 1;
     text-align: left;
+    font-weight: 500;
+    font-style: bold;
 
 }
 

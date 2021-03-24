@@ -188,16 +188,6 @@ body {
     align-items: left;
 }
 
-.section_txt p {
-
-    background: transparent;
-    padding: 1.5rem; /*separación entre los div*/
-    margin: 1rem 1rem 1rem 10.7rem; 
-    color:#3D3D3D;
-    font-size: 27px;
-    align-self: center;
-}
-
 
 
 /*Wrapper principal*/
